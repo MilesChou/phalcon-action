@@ -1,10 +1,10 @@
-FROM mileschou/phalcon
+FROM mileschou/phalcon:7.3
 
 LABEL "repository"="https://github.com/MilesChou/actions-phalcon"
 LABEL "homepage"="https://github.com/MilesChou/actions-phalcon"
-LABEL "maintainer"="Miles Chou <jangconan@gmail.com>"
+LABEL "maintainer"="MilesChou <jangconan@gmail.com>"
 
-LABEL "com.github.actions.name"="Run with Phalcon"
+LABEL "com.github.actions.name"="Phalcon Action"
 LABEL "com.github.actions.description"="An action for running project with Phalcon framework environment"
 LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="black"
