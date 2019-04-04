@@ -9,6 +9,9 @@ LABEL "com.github.actions.description"="An action for running project with Phalc
 LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="black"
 
+# Install the devtools
+RUN docker-phalcon-install-devtools
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
