@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+
+isCommand() {
+  for cmd in \
+    "info" "i"\
+    "commands" "list" "enumerate"\
+    "controller" "create-controller" \
+    "module" "create-module" \
+    "model" "create-model" \
+    "all-models" "create-all-models" \
+    "project" "create-project" \
+    "scaffold" "create-scaffold" \
+    "migration" "create-migration" \
+    "webtools" "create-webtools" \
+    "serve" "server" \
+    "console" "shell" "psysh"
+  do
+    if [ -z "${cmd#"$1"}" ]; then
+      return 0
+    fi
+  done
+
+  return 1
+}
+
+# check if the first argument passed in matches a known command
+if isCommand "$1"; then
+  exec phalcon "$@"
+fi
+
+exec "$@"
