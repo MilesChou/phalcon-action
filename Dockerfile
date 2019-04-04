@@ -1,7 +1,7 @@
 FROM mileschou/phalcon:7.3
 
-LABEL "repository"="https://github.com/MilesChou/actions-phalcon"
-LABEL "homepage"="https://github.com/MilesChou/actions-phalcon"
+LABEL "repository"="https://github.com/MilesChou/phalcon-action"
+LABEL "homepage"="https://github.com/MilesChou/phalcon-action"
 LABEL "maintainer"="MilesChou <jangconan@gmail.com>"
 
 LABEL "com.github.actions.name"="Phalcon Action"

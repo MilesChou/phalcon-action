@@ -1,3 +1,3 @@
-# Phalcon for GitHub Actions 
+# Phalcon Action 
 
 An action for running project with Phalcon framework environment.

@@ -17,5 +17,5 @@ action "Send Discord message" {
     "WEBHOOK_ID",
     "WEBHOOK_TOKEN",
   ]
-  args = "A new commit has been push to `MilesChou/actions-phalcon`."
+  args = "A new commit has been push to `MilesChou/phalcon-action`."
 }
