@@ -28,7 +28,7 @@ for version in ${VERSIONS}; do
     cp phalcon-dev-entrypoint ${version}/phalcon-dev-entrypoint
 
     generated_warning > ${version}/Dockerfile
-    sed -e 's!%%PHP_VERSION%%!'"$version"'!' Dockerfile.template >> ${version}/Dockerfile
+    sed -e 's!%%PHP_VERSION%%!'"${version}-alpine"'!' Dockerfile.template >> ${version}/Dockerfile
 done
 
 # Latest version
@@ -36,4 +36,4 @@ rm -rf Dockerfile
 cp Dockerfile.template Dockerfile
 
 generated_warning > Dockerfile
-sed -e 's!%%PHP_VERSION%%!'"$version"'!' Dockerfile.template >> Dockerfile
+sed -e 's!%%PHP_VERSION%%!'"${LATEST_VERSION}-alpine"'!' Dockerfile.template >> Dockerfile
