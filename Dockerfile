@@ -12,6 +12,6 @@ LABEL "com.github.actions.color"="black"
 # Install the devtools
 RUN docker-phalcon-install-devtools
 
-COPY entrypoint.sh /entrypoint.sh
+COPY phalcon-dev-entrypoint /usr/local/bin/phalcon-dev-entrypoint
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/phalcon-dev-entrypoint"]
