@@ -3,7 +3,7 @@
 #
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
-FROM mileschou/phalcon:7.2
+FROM mileschou/phalcon:5.5
 
 LABEL "repository"="https://github.com/MilesChou/phalcon-action"
 LABEL "homepage"="https://github.com/MilesChou/phalcon-action"
