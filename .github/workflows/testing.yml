@@ -1,0 +1,12 @@
+name: Testing
+
+on: [push]
+
+jobs:
+  default:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Phalcon action
+        uses: mileschou/phalcon-action@master
+        with:
+          args: php -m
