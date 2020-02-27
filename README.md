@@ -9,24 +9,18 @@ An action for running project with Phalcon framework environment.
 
 ## Usage
    
-An example workflow to run Phalcon test is as follows:
+Following is an example workflow to run Phalcon test:
 
 ```
-workflow "Phalcon Test" {
-  on = "push"
-  resolves = ["Test"]
-}
-
-action "Composer Install" {
-  uses = "MilesChou/composer-action@master"
-  args = "install"
-}
-
-action "Test" {
-  uses = "MilesChou/phalcon-action/7.3@master"
-  needs = ["Composer Install"]
-  args = "php vendor/bin/phpunit"
-}
+steps:
+  - name: Composer install
+    uses: MilesChou/composer-action@master
+    with:
+      args: install
+  - name: Phalcon action
+    uses: mileschou/phalcon-action@master
+    with:
+      args: php vendor/bin/phpunit
 ```
 
 ## Credits
