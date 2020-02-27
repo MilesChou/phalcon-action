@@ -1,0 +1,8 @@
+name: Phalcon Action
+description: An action for running project with Phalcon framework environment
+branding:
+  icon: code
+  color: green
+runs:
+  using: docker
+  image: Dockerfile
